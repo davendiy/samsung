@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 styles = ['-', '--', '-.', '_']
 
 # colors of lines
-colors = ['b', 'g', 'r', 'c', 'm', 'y', 'k']
+colors = ['b', 'g', 'r', 'c', 'm', 'k']
 
 
 number_of_style = 0
