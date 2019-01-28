@@ -74,17 +74,21 @@ textIn = np.load('textin.npy')
 textOut = np.load('textout.npy')
 traces = np.load('traces.npy')
 
+plt.plot(traces[0], linewidth=0.2, label='Input signal')
+plt.legend(loc='best')
+plt.show()
 # clean traces using numpy functions
 b, a = signal.butter(6, 0.65, btype='low')
 traces = clean(traces, b, a)
 
+plt.plot(traces[0], linewidth=0.2, label='Cleaned signal')
+plt.legend(loc='best')
+plt.show()
 
 traces_amount = len(textIn)
 meas_amount = len(traces[0])
 tmp_traces = np.transpose(traces)    # addition transposed array of traces
 
-plt.plot(traces[0], linewidth=0.2)
-plt.show()
 
 key = []             # array of best bytes
 leak_places = []     # array of the moments of time where the best bytes was found
