@@ -14,7 +14,7 @@ This program rebuilds the main key of AES-128 from the 10-th round key founded b
 
 import numpy as np
 from Crypto.Cipher import AES
-from task2.AES_constants import Sbox, rConstants
+from AES_constants import Sbox, rConstants
 
 texts_in = np.load('textin.npy')
 texts_out = np.load('textout.npy')

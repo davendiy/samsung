@@ -15,7 +15,7 @@ This program analyses the traces of power consumption and finds the 10-th round 
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import signal
-from task2.AES_constants import InvSbox
+from AES_constants import InvSbox
 
 # Hamming weight for numbers from 0 to 255
 hw = [bin(n).count("1") for n in range(0, 256)]
